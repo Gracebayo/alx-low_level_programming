@@ -1,25 +1,19 @@
 #include <stdio.h>
+
 /**
- *  main -Entry point 
- *  Description:'Print the alphabets in lowercase'
- *  Return: 0 ( Success)
+ * main -Entry point 
+ * Description:'Print the alphabets in lowercase and uppercase'
+ * Return: always 0
  */
 int main(void)
-{
-	int n = 97;
+{	
+	char i;
 	
-	while (n <= 122)
-	{
-		if (n == 101 || n :x = 113)
-		{
-			n++;
-			continue;
-		}
-		putchar(n);
-	   	n++;
-	}
-	putchar('\n');
-	return(0);
+	for (i = 'a' ; i <= '2' ; i++)
+		if (i != 'q' && i != 'e')
+			putchar (i);
+	putchar ('\n');
+	return (0);
 }	
 
 	
