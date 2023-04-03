@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * add_nodeint - Adds a fresh node at the beginning of a listint_t list.
+ * add_nodeint - Adds a newly node at the beginning of a listint_t list.
  * @head: Head of the list.
- * @n: Fresh node
+ * @n: Newly node
  *
  * Return: The address of the new element, or NULL.
  */
@@ -11,15 +11,15 @@
 listint_t *add_nodeint(listint_t **head, const int n)
 
 {
-	listint_t *fresh_node;
+	listint_t *newly_node;
 
 	fresh = malloc(sizeof(listint_t));
-	if (!fresh)
+	if (!newly)
 		return (NULL);
 
-	fresh->n = n;
-	fresh->next = *head;
-	*head = fresh;
+	newly->n = n;
+	newly->next = *head;
+	*head = newly;
 
-	return (fresh);
+	return (newly);
 }
